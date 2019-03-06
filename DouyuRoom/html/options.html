@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="UTF-8">	
+	<title>选项页面</title>
+</head>
+<body>
+	<p>
+		<input type="file" id="input"> ← 导入数据
+	</p><br>
+	<p>
+		<input type="button" id="output" value="导出"/> ← 导出数据
+	</p><br>
+	<p>
+		
+	<a  id ="#" href="search.html" target="_blank">宝箱数据详细查询 </a>
+	</P><br>
+	<p>
+		<input id ="treasuretext" type="text" name="treasuretext" placeholder="抢宝箱弹幕" />
+		<button id ="treasurebtn" type="button">保存抢宝箱弹幕</button>
+	</P><br>
+	<p>
+		开启抢宝箱模式 (会关闭播放,减少硬件消耗): &emsp;
+		<input type="radio" name="robTreasure" checked="checked" value ="0">禁用&emsp;&emsp;
+		<input type="radio" name="robTreasure" value ="1">启用&emsp;&emsp;
+		<button id="robTreasureClick">保存</button>
+	</P><br>
+	<p>
+		数据库类型: <input type="radio" name="insertType" checked="checked" value ="0">不保存&emsp;&emsp;
+		<input type="radio" name="insertType" value ="1">indexedDB&emsp;&emsp;
+		<input type="radio" name="insertType" value ="2">MySql &emsp;&emsp;
+		<button id="insertTypeClick">保存</button>
+	</P><br>
+	<p>
+		是否提示抢到的宝箱内容: 
+		<input type="radio" name="showMsg" checked="checked" value ="0">不显示&emsp;&emsp;
+		<input type="radio" name="showMsg" value ="1">显示&emsp;&emsp;
+		<button id="showMsgClick">保存</button>
+	</P><br>
+
+	<p>		
+		<a  id ="#" href="jifen.html" target="_blank">按积分查询 </a>
+	</P><br>
+
+	<!-- <button id="SaveClick">保存</button> -->
+</body>
+	<!-- 防止没有渲染完成。而找不到元素 -->
+	<script src="../js/QuoteJs/jquery.min.js"></script>
+	<script src="../js/QuoteJs/FileSaver.min.js"></script>
+	<script src="../js/BaseJs/options.js"></script>
+</html>
